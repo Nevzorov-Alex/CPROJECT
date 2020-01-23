@@ -1,0 +1,10 @@
+mod:=$20;
+
+setmask($b); 
+ SendMess(mod*256,$ff01,2,$2c,$40); 
+ recvmess(a,b,c,d,e,code,par); 
+ writeln('ID plate =',code); 
+ writeln;
+
+if (code=$22da) then writeln('it is AM29LV800B');fi;
+if (code=$224a) then writeln('it is AM29DL800B');fi;

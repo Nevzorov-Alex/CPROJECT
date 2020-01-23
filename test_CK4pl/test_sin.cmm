@@ -1,0 +1,123 @@
+SetHashFile ('.\Hashes\MyHash.xml');
+SetHashFile('.\Hashes\Common.xml');
+
+settimeout(3000);
+
+count_test:=20;            //7000;           // 7142; количество тестов при тестировании DSP
+cont_sincr:=10;            //  количество тестов при тестировании синхры
+level_up:=2;
+level_top:=2;           //6995;
+flag_middle:=0;
+
+
+//mod:=(evalasync('~user("Caption","номер модуля CK4Б XX  - вводить $XX ",300,200)'));
+mod:=$20;
+modto:=mod*256+$fe;
+
+writeln('==================================================');
+writeln('Тестирование устойчивости работы поля в модуле ',mod);
+writeln('==================================================');
+writeln;
+
+
+
+  if mod=0 then 
+    include chkmod.inc;
+  fi;
+
+  if ((mod<$20) || (mod>$2f))  then 
+    writeln(' Неверный номер модуля !!!');
+    goto fina; 	
+  fi;
+
+mod_L:=mod*2;
+
+//link real_trakt->15
+modck:=mod*256+$fe;
+modcslto1:=mod_L*256+$fe;
+
+setmod(mod);
+d:=$6000;
+writeln('запись данных  в первый физический тракт');
+//запись данных
+for i from 0 to 127 do
+      slot:=i;	
+      tr:=1;
+      datack4:=d+$20+i;
+      include writep.inc;
+      write('.');
+      if ((i+1 && $f)=0) then delay(100); writeln; fi;
+od;
+
+//проключение 1
+for j from 12 to 15 do
+   for i from 0 to 31 do  // 
+      oTR:=j;
+      iTR:=j+8;
+      oCH:=i; 
+      iCH:=i;
+      ampl :=$0;  iCH:=i;
+      x1 := (oTR << 5) || oCH;
+      x2 := (iTR << 5) || iCH;
+      sendmess(modcslto1, $0407, x1, x2, 1,ampl);
+      recvmess(a);
+   od;
+od;
+
+//проключение 2
+for j from 12 to 15 do
+   for i from 0 to 31 do  // 
+      oTR:=j;
+      iTR:=j;
+      oCH:=i; 
+      iCH:=i;
+      ampl :=$0;  iCH:=i;
+      x1 := (oTR << 5) || oCH;
+      x2 := (iTR << 5) || iCH;
+      sendmess(modto, $0407, x1, x2, 1,ampl);
+      recvmess(a);
+   od;
+od;
+
+//проключение 3
+for j from 4 to 7 do
+   for i from 0 to 31 do  // 
+      oTR:=j;
+      iTR:=j;
+      oCH:=i; 
+      iCH:=i;
+      ampl :=$0;  iCH:=i;
+      x1 := (oTR << 5) || oCH;
+      x2 := (iTR << 5) || iCH;
+      sendmess(modto, $0407, x1, x2, 1,ampl);
+      recvmess(a);
+   od;
+od;
+
+writeln('Ожидаем прогона теста 10 сек');
+delay(1000);
+
+
+setmod(mod);
+slot:=0;
+tr:=1;
+
+for j from 0 to cont_sincr do 
+slot:=0;
+for i from 0 to 90 do 
+  tr:=1;
+//write(i,': ');
+  include readp.inc;
+  if (val2<>$20+i) 
+    then loc_err0:=loc_err0+1; writeln('i=',i,' val1=',val2); //  goto fina;
+  fi;
+//  write('val1=',val1);
+  slot:=slot+1;
+od;
+write('.');
+od;
+writeln;
+writeln('Ошибок по синхронизации в  1 тракте ', loc_err0);
+
+
+fina:

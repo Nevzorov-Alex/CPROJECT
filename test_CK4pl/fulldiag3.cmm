@@ -1,0 +1,64 @@
+
+
+mod := $20;
+
+NUM_TRACT:=32;
+writeln('==============================================');
+writeln('Тестирование коммутационного поля в модуле ',mod);
+writeln('==============================================');
+writeln;
+
+
+setmod(mod);
+d:=$6000;
+
+tr  :=0;
+for k from 0 to NUM_TRACT -1 do
+	data:=$10+k;        // ЇҐаҐ¤ ў Ґ¬лҐ ¤ ­­лҐ
+	tr:=k; 
+//        writeln('загрузка данных в тракт ',k,'data=',data);
+        writeln('загрузка данных в тракт ',k);
+         for i from 1 to 123 do
+           datack4:=d+data+i;
+           slot:=i;
+           include writep.cmm;
+//           writeln('slot=',slot,'data=',datack4);
+           if (i&& $f) =0 then delay(100) fi;
+         od;
+      
+od;
+
+
+setmod(mod);
+d:=$6000;
+
+for k from 0 to NUM_TRACT-1 do
+        tr:=k; 
+        moda:=$10+tr;
+        l:=0;
+        writeln('Тестирование тракта ',tr);
+        for i from 1 to 20 do
+           slot:=i;
+           if (i && $3) <> 0 then
+           delay(50);
+           include readp.inc;
+           if ( val2 <> (moda+i))
+             then l:=l+1; writeln('Error in slot',slot,' we have ',val2,'must have',moda+i);
+             else 
+		if ((slot && $1f)<>0) 
+			then write('.'); 
+			else writeln('.');  
+		fi;
+           fi;
+           fi;
+        od;
+        writeln;
+     
+
+  if ( l > 0 )
+     then writeln('Тракт №',tr,' не рабочий !!!!!');
+     else writeln('Тракт №',tr,' рабочий ');
+  fi;
+
+od;
+

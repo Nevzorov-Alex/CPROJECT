@@ -1,0 +1,25 @@
+
+//slot:=64;           //  слот
+//slot:=16;           //  слот
+//tr  :=1;            //  физический тракт
+
+//settimeout(200);
+muxbase :=$8000;
+port1   :=muxbase +$2000 +(tr <<8)+ (slot<<1);
+
+finishTR:
+
+SendMess(mod*256+$fe,4020,tr,slot);
+
+ww:=RecvMess(a,b,val2,val1);
+
+//            writeln(msg,val1,val2,val3,val4);
+delay(10);
+
+//if RecvMess(msg,val1,val2)<>0 then goto finishTR fi;
+
+if ww=0 then
+         writeln('ww= ',ww,'val1=',val1,'val2=',val2,'slot=',slot);
+             goto finishTR;
+fi;
+

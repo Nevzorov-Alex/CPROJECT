@@ -1,0 +1,74 @@
+SetHashFile ('.\Hashes\MyHash.xml');
+SetHashFile('.\Hashes\Common.xml');
+settimeout(6000);
+
+
+mod:=$2040;
+if (mod =0)||(mod=-1) then
+  writeln('bye bye!');
+else
+
+//if mod > $FFFF then Length:=100 ;fi ;
+if mod>$1000000 then 
+  base := (mod>>24)&& $FF; 
+  mod1 := (mod>>16)&& $FF; 
+  mod2 := (mod>>8)&& $FF; 
+  mod3:= mod &&$FF ;
+else
+if mod>$10000 then 
+  base := (mod>>16)&& $FF;
+  mod1 := (mod>>8)&& $FF; 
+  mod2 := mod &&$FF ;
+else
+if mod>$100 then 
+  base := (mod>>8)&& $FF; mod1 := mod &&$FF ;
+fi ;
+fi ;
+fi ;
+mod := mod2; 
+
+//base:=$20;
+//mod1:=$40;
+  writeln ('testing HDLC base', base,' and module ',mod1);
+
+time := 5 ;
+Length:=1;
+// setup internal variables
+SetMask($B);
+SendMess(Base*256,$ff01,2,$100+($FF*2),$1b0);
+recvMess(a,b,c,d,e,MainSeg);
+
+kant:=0;
+again:
+if (kant=10) then goto fin; else kant:=kant+1; fi;
+//wave := 10  ;   include speed.inc ;
+//wave := 3  ;   include speed.inc ;
+//wave := 10  ;   include speed.inc ;
+wave := 1   ;
+if mod1>0 then mod := mod1 ; include speed.inc ;
+fi ;
+if mod2>0 then mod := mod2 ; include speed.inc ;
+fi ;
+if mod3>0 then mod := mod3 ; include speed.inc ;
+fi ;
+
+oops:
+if recvmess(a)>0 then goto oops fi ;
+
+mod := base ;
+if (havenotime=0) then
+  havenotime:=10 ;
+    SendMess(mod*256+$ff,$8922);
+    if recvmess(a,b,c,d,e,f,g,h)>0 then 
+      if b=$8921 then
+//        EvalWrite (' ~cd(d[8],d):~cd(d[4],d):~cd(d[0],d)',e,d,c); 
+      fi ;
+    fi 
+else
+  havenotime := havenotime-1 ;
+fi ;
+
+delay (4000); goto again; 
+fi ;
+fin:
+writeln ;

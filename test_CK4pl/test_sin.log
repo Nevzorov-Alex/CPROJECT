@@ -1,0 +1,536 @@
+>>>> Запуск на выполнение 31.10.2018 13:24:12 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+20 write tract  01 slot 00 20 
+20 write tract  01 slot 01 21 
+20 write tract  01 slot 02 22 
+20 write tract  01 slot 03 23 
+20 write tract  01 slot 04 24 
+20 write tract  01 slot 05 25 
+20 write tract  01 slot 06 26 
+20 write tract  01 slot 07 27 
+20 write tract  01 slot 08 28 
+20 write tract  01 slot 09 29 
+20 write tract  01 slot 0A 2A 
+20 write tract  01 slot 0B 2B 
+20 write tract  01 slot 0C 2C 
+20 write tract  01 slot 0D 2D 
+20 write tract  01 slot 0E 2E 
+20 write tract  01 slot 0F 2F 
+20 write tract  01 slot 10 30 
+20 write tract  01 slot 11 31 
+20 write tract  01 slot 12 32 
+20 write tract  01 slot 13 33 
+20 write tract  01 slot 14 34 
+20 write tract  01 slot 15 35 
+20 write tract  01 slot 16 36 
+20 write tract  01 slot 17 37 
+20 write tract  01 slot 18 38 
+20 write tract  01 slot 19 39 
+20 write tract  01 slot 1A 3A 
+20 write tract  01 slot 1B 3B 
+20 write tract  01 slot 1C 3C 
+20 write tract  01 slot 1D 3D 
+20 write tract  01 slot 1E 3E 
+20 write tract  01 slot 1F 3F 
+20 write tract  01 slot 20 40 
+20 write tract  01 slot 21 41 
+20 write tract  01 slot 22 42 
+20 write tract  01 slot 23 43 
+20 write tract  01 slot 24 44 
+20 write tract  01 slot 25 45 
+20 write tract  01 slot 26 46 
+20 write tract  01 slot 27 47 
+20 write tract  01 slot 28 48 
+20 write tract  01 slot 29 49 
+20 write tract  01 slot 2A 4A 
+20 write tract  01 slot 2B 4B 
+20 write tract  01 slot 2C 4C 
+20 write tract  01 slot 2D 4D 
+20 write tract  01 slot 2E 4E 
+20 write tract  01 slot 2F 4F 
+20 write tract  01 slot 30 50 
+20 write tract  01 slot 31 51 
+20 write tract  01 slot 32 52 
+20 write tract  01 slot 33 53 
+20 write tract  01 slot 34 54 
+20 write tract  01 slot 35 55 
+20 write tract  01 slot 36 56 
+20 write tract  01 slot 37 57 
+20 write tract  01 slot 38 58 
+20 write tract  01 slot 39 59 
+20 write tract  01 slot 3A 5A 
+20 write tract  01 slot 3B 5B 
+20 write tract  01 slot 3C 5C 
+20 write tract  01 slot 3D 5D 
+20 write tract  01 slot 3E 5E 
+20 write tract  01 slot 3F 5F 
+20 write tract  01 slot 40 60 
+20 write tract  01 slot 41 61 
+20 write tract  01 slot 42 62 
+20 write tract  01 slot 43 63 
+20 write tract  01 slot 44 64 
+20 write tract  01 slot 45 65 
+20 write tract  01 slot 46 66 
+20 write tract  01 slot 47 67 
+20 write tract  01 slot 48 68 
+20 write tract  01 slot 49 69 
+20 write tract  01 slot 4A 6A 
+20 write tract  01 slot 4B 6B 
+20 write tract  01 slot 4C 6C 
+20 write tract  01 slot 4D 6D 
+20 write tract  01 slot 4E 6E 
+20 write tract  01 slot 4F 6F 
+20 write tract  01 slot 50 70 
+20 write tract  01 slot 51 71 
+20 write tract  01 slot 52 72 
+20 write tract  01 slot 53 73 
+20 write tract  01 slot 54 74 
+20 write tract  01 slot 55 75 
+20 write tract  01 slot 56 76 
+20 write tract  01 slot 57 77 
+20 write tract  01 slot 58 78 
+20 write tract  01 slot 59 79 
+20 write tract  01 slot 5A 7A 
+20 write tract  01 slot 5B 7B 
+20 write tract  01 slot 5C 7C 
+20 write tract  01 slot 5D 7D 
+20 write tract  01 slot 5E 7E 
+20 write tract  01 slot 5F 7F 
+20 write tract  01 slot 60 80 
+20 write tract  01 slot 61 81 
+20 write tract  01 slot 62 82 
+20 write tract  01 slot 63 83 
+20 write tract  01 slot 64 84 
+20 write tract  01 slot 65 85 
+20 write tract  01 slot 66 86 
+20 write tract  01 slot 67 87 
+20 write tract  01 slot 68 88 
+20 write tract  01 slot 69 89 
+20 write tract  01 slot 6A 8A 
+20 write tract  01 slot 6B 8B 
+20 write tract  01 slot 6C 8C 
+20 write tract  01 slot 6D 8D 
+20 write tract  01 slot 6E 8E 
+20 write tract  01 slot 6F 8F 
+20 write tract  01 slot 70 90 
+20 write tract  01 slot 71 91 
+20 write tract  01 slot 72 92 
+20 write tract  01 slot 73 93 
+20 write tract  01 slot 74 94 
+20 write tract  01 slot 75 95 
+20 write tract  01 slot 76 96 
+20 write tract  01 slot 77 97 
+20 write tract  01 slot 78 98 
+20 write tract  01 slot 79 99 
+20 write tract  01 slot 7A 9A 
+20 write tract  01 slot 7B 9B 
+20 write tract  01 slot 7C 9C 
+20 write tract  01 slot 7D 9D 
+20 write tract  01 slot 7E 9E 
+20 write tract  01 slot 7F 9F 
+
+!!!! Прервано выполнение 31.10.2018 13:24:39 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:27:08 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+20 write tract  01 slot 00 20 
+20 write tract  01 slot 01 21 
+20 write tract  01 slot 02 22 
+20 write tract  01 slot 03 23 
+20 write tract  01 slot 04 24 
+20 write tract  01 slot 05 25 
+20 write tract  01 slot 06 26 
+20 write tract  01 slot 07 27 
+20 write tract  01 slot 08 28 
+20 write tract  01 slot 09 29 
+20 write tract  01 slot 0A 2A 
+20 write tract  01 slot 0B 2B 
+20 write tract  01 slot 0C 2C 
+20 write tract  01 slot 0D 2D 
+20 write tract  01 slot 0E 2E 
+20 write tract  01 slot 0F 2F 
+20 write tract  01 slot 10 30 
+20 write tract  01 slot 11 31 
+20 write tract  01 slot 12 32 
+20 write tract  01 slot 13 33 
+20 write tract  01 slot 14 34 
+20 write tract  01 slot 15 35 
+20 write tract  01 slot 16 36 
+20 write tract  01 slot 17 37 
+20 write tract  01 slot 18 38 
+20 write tract  01 slot 19 39 
+20 write tract  01 slot 1A 3A 
+20 write tract  01 slot 1B 3B 
+20 write tract  01 slot 1C 3C 
+20 write tract  01 slot 1D 3D 
+20 write tract  01 slot 1E 3E 
+20 write tract  01 slot 1F 3F 
+20 write tract  01 slot 20 40 
+20 write tract  01 slot 21 41 
+20 write tract  01 slot 22 42 
+20 write tract  01 slot 23 43 
+20 write tract  01 slot 24 44 
+20 write tract  01 slot 25 45 
+20 write tract  01 slot 26 46 
+20 write tract  01 slot 27 47 
+20 write tract  01 slot 28 48 
+20 write tract  01 slot 29 49 
+20 write tract  01 slot 2A 4A 
+20 write tract  01 slot 2B 4B 
+20 write tract  01 slot 2C 4C 
+20 write tract  01 slot 2D 4D 
+20 write tract  01 slot 2E 4E 
+20 write tract  01 slot 2F 4F 
+20 write tract  01 slot 30 50 
+20 write tract  01 slot 31 51 
+20 write tract  01 slot 32 52 
+20 write tract  01 slot 33 53 
+20 write tract  01 slot 34 54 
+20 write tract  01 slot 35 55 
+20 write tract  01 slot 36 56 
+20 write tract  01 slot 37 57 
+20 write tract  01 slot 38 58 
+20 write tract  01 slot 39 59 
+20 write tract  01 slot 3A 5A 
+20 write tract  01 slot 3B 5B 
+20 write tract  01 slot 3C 5C 
+20 write tract  01 slot 3D 5D 
+20 write tract  01 slot 3E 5E 
+20 write tract  01 slot 3F 5F 
+20 write tract  01 slot 40 60 
+20 write tract  01 slot 41 61 
+20 write tract  01 slot 42 62 
+20 write tract  01 slot 43 63 
+
+!!!! Прервано выполнение 31.10.2018 13:27:13 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:27:45 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+20 write tract  01 slot 00 20 
+20 write tract  01 slot 01 21 
+20 write tract  01 slot 02 22 
+20 write tract  01 slot 03 23 
+20 write tract  01 slot 04 24 
+20 write tract  01 slot 05 25 
+20 write tract  01 slot 06 26 
+20 write tract  01 slot 07 27 
+20 write tract  01 slot 08 28 
+20 write tract  01 slot 09 29 
+20 write tract  01 slot 0A 2A 
+
+!!!! Прервано выполнение 31.10.2018 13:28:23 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:28:48 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+20 write tract  01 slot 00 20 
+20 write tract  01 slot 01 21 
+20 write tract  01 slot 02 22 
+20 write tract  01 slot 03 23 
+20 write tract  01 slot 04 24 
+20 write tract  01 slot 05 25 
+20 write tract  01 slot 06 26 
+20 write tract  01 slot 07 27 
+20 write tract  01 slot 08 28 
+20 write tract  01 slot 09 29 
+20 write tract  01 slot 0A 2A 
+20 write tract  01 slot 0B 2B 
+20 write tract  01 slot 0C 2C 
+20 write tract  01 slot 0D 2D 
+20 write tract  01 slot 0E 2E 
+20 write tract  01 slot 0F 2F 
+20 write tract  01 slot 10 30 
+20 write tract  01 slot 11 31 
+20 write tract  01 slot 12 32 
+20 write tract  01 slot 13 33 
+20 write tract  01 slot 14 34 
+20 write tract  01 slot 15 35 
+20 write tract  01 slot 16 36 
+20 write tract  01 slot 17 37 
+20 write tract  01 slot 18 38 
+20 write tract  01 slot 19 39 
+20 write tract  01 slot 1A 3A 
+20 write tract  01 slot 1B 3B 
+20 write tract  01 slot 1C 3C 
+20 write tract  01 slot 1D 3D 
+20 write tract  01 slot 1E 3E 
+20 write tract  01 slot 1F 3F 
+20 write tract  01 slot 20 40 
+20 write tract  01 slot 21 41 
+20 write tract  01 slot 22 42 
+20 write tract  01 slot 23 43 
+20 write tract  01 slot 24 44 
+20 write tract  01 slot 25 45 
+20 write tract  01 slot 26 46 
+20 write tract  01 slot 27 47 
+20 write tract  01 slot 28 48 
+20 write tract  01 slot 29 49 
+20 write tract  01 slot 2A 4A 
+20 write tract  01 slot 2B 4B 
+20 write tract  01 slot 2C 4C 
+20 write tract  01 slot 2D 4D 
+20 write tract  01 slot 2E 4E 
+20 write tract  01 slot 2F 4F 
+20 write tract  01 slot 30 50 
+20 write tract  01 slot 31 51 
+20 write tract  01 slot 32 52 
+20 write tract  01 slot 33 53 
+20 write tract  01 slot 34 54 
+20 write tract  01 slot 35 55 
+20 write tract  01 slot 36 56 
+20 write tract  01 slot 37 57 
+20 write tract  01 slot 38 58 
+20 write tract  01 slot 39 59 
+20 write tract  01 slot 3A 5A 
+20 write tract  01 slot 3B 5B 
+20 write tract  01 slot 3C 5C 
+20 write tract  01 slot 3D 5D 
+20 write tract  01 slot 3E 5E 
+20 write tract  01 slot 3F 5F 
+20 write tract  01 slot 40 60 
+20 write tract  01 slot 41 61 
+20 write tract  01 slot 42 62 
+20 write tract  01 slot 43 63 
+20 write tract  01 slot 44 64 
+20 write tract  01 slot 45 65 
+20 write tract  01 slot 46 66 
+20 write tract  01 slot 47 67 
+20 write tract  01 slot 48 68 
+20 write tract  01 slot 49 69 
+20 write tract  01 slot 4A 6A 
+20 write tract  01 slot 4B 6B 
+20 write tract  01 slot 4C 6C 
+20 write tract  01 slot 4D 6D 
+20 write tract  01 slot 4E 6E 
+20 write tract  01 slot 4F 6F 
+20 write tract  01 slot 50 70 
+20 write tract  01 slot 51 71 
+20 write tract  01 slot 52 72 
+20 write tract  01 slot 53 73 
+20 write tract  01 slot 54 74 
+20 write tract  01 slot 55 75 
+20 write tract  01 slot 56 76 
+20 write tract  01 slot 57 77 
+20 write tract  01 slot 58 78 
+20 write tract  01 slot 59 79 
+20 write tract  01 slot 5A 7A 
+20 write tract  01 slot 5B 7B 
+20 write tract  01 slot 5C 7C 
+20 write tract  01 slot 5D 7D 
+20 write tract  01 slot 5E 7E 
+20 write tract  01 slot 5F 7F 
+20 write tract  01 slot 60 80 
+20 write tract  01 slot 61 81 
+20 write tract  01 slot 62 82 
+20 write tract  01 slot 63 83 
+20 write tract  01 slot 64 84 
+20 write tract  01 slot 65 85 
+20 write tract  01 slot 66 86 
+20 write tract  01 slot 67 87 
+20 write tract  01 slot 68 88 
+20 write tract  01 slot 69 89 
+20 write tract  01 slot 6A 8A 
+20 write tract  01 slot 6B 8B 
+20 write tract  01 slot 6C 8C 
+20 write tract  01 slot 6D 8D 
+20 write tract  01 slot 6E 8E 
+20 write tract  01 slot 6F 8F 
+20 write tract  01 slot 70 90 
+20 write tract  01 slot 71 91 
+20 write tract  01 slot 72 92 
+20 write tract  01 slot 73 93 
+20 write tract  01 slot 74 94 
+20 write tract  01 slot 75 95 
+20 write tract  01 slot 76 96 
+20 write tract  01 slot 77 97 
+20 write tract  01 slot 78 98 
+20 write tract  01 slot 79 99 
+20 write tract  01 slot 7A 9A 
+20 write tract  01 slot 7B 9B 
+20 write tract  01 slot 7C 9C 
+20 write tract  01 slot 7D 9D 
+20 write tract  01 slot 7E 9E 
+20 write tract  01 slot 7F 9F 
+
+!!!! Прервано выполнение 31.10.2018 13:29:09 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:34:24 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+20 write tract  01 slot 00 20 
+20 write tract  01 slot 01 21 
+20 write tract  01 slot 02 22 
+20 write tract  01 slot 03 23 
+20 write tract  01 slot 04 24 
+20 write tract  01 slot 05 25 
+20 write tract  01 slot 06 26 
+20 write tract  01 slot 07 27 
+20 write tract  01 slot 08 28 
+20 write tract  01 slot 09 29 
+20 write tract  01 slot 0A 2A 
+20 write tract  01 slot 0B 2B 
+20 write tract  01 slot 0C 2C 
+20 write tract  01 slot 0D 2D 
+20 write tract  01 slot 0E 2E 
+20 write tract  01 slot 0F 2F 
+20 write tract  01 slot 10 30 
+20 write tract  01 slot 11 31 
+20 write tract  01 slot 12 32 
+20 write tract  01 slot 13 33 
+20 write tract  01 slot 14 34 
+20 write tract  01 slot 15 35 
+20 write tract  01 slot 16 36 
+20 write tract  01 slot 17 37 
+20 write tract  01 slot 18 38 
+20 write tract  01 slot 19 39 
+20 write tract  01 slot 1A 3A 
+20 write tract  01 slot 1B 3B 
+20 write tract  01 slot 1C 3C 
+20 write tract  01 slot 1D 3D 
+20 write tract  01 slot 1E 3E 
+20 write tract  01 slot 1F 3F 
+20 write tract  01 slot 20 40 
+20 write tract  01 slot 21 41 
+20 write tract  01 slot 22 42 
+20 write tract  01 slot 23 43 
+20 write tract  01 slot 24 44 
+20 write tract  01 slot 25 45 
+20 write tract  01 slot 26 46 
+20 write tract  01 slot 27 47 
+20 write tract  01 slot 28 48 
+20 write tract  01 slot 29 49 
+20 write tract  01 slot 2A 4A 
+20 write tract  01 slot 2B 4B 
+20 write tract  01 slot 2C 4C 
+20 write tract  01 slot 2D 4D 
+20 write tract  01 slot 2E 4E 
+20 write tract  01 slot 2F 4F 
+
+!!!! Прервано выполнение 31.10.2018 13:34:27 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:38:55 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+!!!! Прервано выполнение 31.10.2018 13:39:15 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:40:14 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+!!!! Прервано выполнение 31.10.2018 13:40:20 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:51:25 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+!!!! Прервано выполнение 31.10.2018 13:51:36 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:53:17 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . i= 0F 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+!!!! Прервано выполнение 31.10.2018 13:53:27 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:54:04 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. i= 00 
+. . . . . . . . . . . . . . . . i= 10 
+. . . . . . . . . . . . . . . . i= 20 
+. . . . . . . . . . . . . . . . i= 30 
+. . . . . . . . . . . . . . . . i= 40 
+. . . . . . . . . . . . . . . . i= 50 
+. . . . . . . . . . . . . . . . i= 60 
+. . . . . . . . . . . . . . . . i= 70 
+. . . . . . . . . . . . . . . 
+!!!! Прервано выполнение 31.10.2018 13:54:37 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:56:58 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . i= 0F 
+. . . . . . . . . . . . . . . . i= 1F 
+. . . . . . . . . . . . . . . . i= 2F 
+. . . . . . . . . . . . . . . . i= 3F 
+. . . . . . . . . . . . . . . . i= 4F 
+. . . . . . . . . . . . . . . . i= 5F 
+. . . . . . . . . . . . . . . . i= 6F 
+. . . . . . . . . . . . . . . . i= 7F 
+
+!!!! Прервано выполнение 31.10.2018 13:57:12 !!!!
+
+>>>> Запуск на выполнение 31.10.2018 13:59:18 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+
+!!!! Прервано выполнение 31.10.2018 13:59:31 !!!!
+
+>>>> Запуск на выполнение 01.11.2018 10:30:29 >>>>
+
+================================================== 
+Тестирование устойчивости работы поля в модуле  20 
+================================================== 
+
+запись данных  в первый физический тракт 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. 
+!!!! Прервано выполнение 01.11.2018 10:30:47 !!!!
+
